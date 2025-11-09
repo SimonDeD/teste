@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habblet Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="page">
+    <aside class="sidebar" aria-label="Menu principal">
+      <button class="mobile-nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="profile-card">
+        <div class="avatar">
+          <img src="https://images.habbo.com/habbo-web-articles/lpromo_habblet_illustration.png" alt="Avatar Habblet" loading="lazy">
+        </div>
+        <div class="profile-info">
+          <h1>Walim</h1>
+          <p>Construtor veterano • Nível 34</p>
+          <button class="enter-hotel" type="button">Entrar no Hotel</button>
+        </div>
+      </div>
+      <nav class="menu">
+        <h2>Explorar</h2>
+        <ul>
+          <li><a href="#stories">Story</a></li>
+          <li><a href="#novidades">Últimas notícias</a></li>
+          <li><a href="#comunidade">Comunidade</a></li>
+          <li><a href="#ranking">Ranking</a></li>
+        </ul>
+        <h2>Conta</h2>
+        <ul>
+          <li><a href="#perfil">Meu perfil</a></li>
+          <li><a href="#mensagens">Mensagens</a></li>
+          <li><a href="#configuracoes">Configurações</a></li>
+          <li><a href="#sair">Sair</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        <p>Habblet City © 2024</p>
+      </div>
+    </aside>
+
+    <main class="content" id="topo">
+      <header class="topbar">
+        <div class="brand">
+          <img src="https://i.imgur.com/1p5Xc8l.png" alt="Logo Habblet" loading="lazy">
+          <div>
+            <span class="product">Habblet</span>
+            <span class="section">Central de Notícias</span>
+          </div>
+        </div>
+        <form class="search" role="search" aria-label="Buscar no Habblet">
+          <label for="query" class="sr-only">Buscar</label>
+          <input id="query" type="search" name="q" placeholder="Buscar quartos, usuários ou matérias" autocomplete="off">
+        </form>
+        <div class="topbar-actions">
+          <button type="button" class="action" aria-label="Notificações">
+            <span class="material-icon">notifications</span>
+            <span class="badge">3</span>
+          </button>
+          <button type="button" class="action" aria-label="Mensagens">
+            <span class="material-icon">chat</span>
+            <span class="badge">5</span>
+          </button>
+          <button type="button" class="action" aria-label="Criar story">
+            <span class="material-icon">add</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="stories" id="stories" aria-label="Stories da comunidade">
+        <header class="section-header">
+          <h2>Story</h2>
+          <a href="#stories" class="link">Ver tudo</a>
+        </header>
+        <div class="story-list" role="list">
+          <article class="story" role="listitem">
+            <img src="https://i.imgur.com/u7c0f2u.png" alt="Story do evento de Carnaval" loading="lazy">
+            <h3>Carnaval Neon</h3>
+          </article>
+          <article class="story" role="listitem">
+            <img src="https://i.imgur.com/GZqX6pR.png" alt="Story do festival Pixel" loading="lazy">
+            <h3>Pixel Fest</h3>
+          </article>
+          <article class="story" role="listitem">
+            <img src="https://i.imgur.com/GHISN1B.png" alt="Story de construção temática" loading="lazy">
+            <h3>Castelos</h3>
+          </article>
+          <article class="story" role="listitem">
+            <img src="https://i.imgur.com/YiJ1u4Z.png" alt="Story do Habblet Awards" loading="lazy">
+            <h3>Awards</h3>
+          </article>
+          <article class="story" role="listitem">
+            <img src="https://i.imgur.com/hLXS0cA.png" alt="Story da casa futurista" loading="lazy">
+            <h3>Futuro</h3>
+          </article>
+          <article class="story" role="listitem">
+            <img src="https://i.imgur.com/AEwFDFG.png" alt="Story do roleplay policial" loading="lazy">
+            <h3>Roleplay</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="news" id="novidades" aria-label="Últimas notícias">
+        <header class="section-header">
+          <h2>Últimas novidades</h2>
+          <nav class="tabs" aria-label="Filtrar novidades">
+            <button type="button" class="tab active" data-filter="recentes">Recentes</button>
+            <button type="button" class="tab" data-filter="populares">Populares</button>
+            <button type="button" class="tab" data-filter="eventos">Eventos</button>
+          </nav>
+        </header>
+        <div class="news-grid" role="list">
+          <article class="news-card" data-category="recentes eventos" role="listitem">
+            <img src="https://i.imgur.com/2D6aYzS.png" alt="Prévia da missão Resgate Submarino" loading="lazy">
+            <div class="card-content">
+              <span class="tag">Evento oficial</span>
+              <h3>Missão Resgate Submarino</h3>
+              <p>Junte-se à expedição para descobrir os segredos que Habblet esconde debaixo d'água.</p>
+              <div class="meta">
+                <span>Hoje • 18h</span>
+                <span>132 participantes</span>
+              </div>
+            </div>
+          </article>
+          <article class="news-card" data-category="recentes populares" role="listitem">
+            <img src="https://i.imgur.com/DRhV7Nq.png" alt="Quarto vencedor do concurso Pixel Art" loading="lazy">
+            <div class="card-content">
+              <span class="tag">Comunidade</span>
+              <h3>Vencedores do Pixel Art 2024</h3>
+              <p>Conheça os quartos premiados na competição que coloriu o Habblet City este mês.</p>
+              <div class="meta">
+                <span>Ontem</span>
+                <span>2.1K curtidas</span>
+              </div>
+            </div>
+          </article>
+          <article class="news-card" data-category="recentes" role="listitem">
+            <img src="https://i.imgur.com/Gk9rlvZ.png" alt="Equipe do Habblet preparando atualização" loading="lazy">
+            <div class="card-content">
+              <span class="tag">Atualização</span>
+              <h3>Patch 9.3: Ferramentas de construção</h3>
+              <p>Novas ferramentas para construir ambientes mais imersivos chegam esta semana.</p>
+              <div class="meta">
+                <span>Há 2 dias</span>
+                <span>Notas oficiais</span>
+              </div>
+            </div>
+          </article>
+          <article class="news-card" data-category="populares eventos" role="listitem">
+            <img src="https://i.imgur.com/evnKBwM.png" alt="Jogadores festejando no rooftop" loading="lazy">
+            <div class="card-content">
+              <span class="tag">Social</span>
+              <h3>Noite da Cidade</h3>
+              <p>O rooftop mais badalado do Habblet abre as portas com DJs convidados e prêmios raros.</p>
+              <div class="meta">
+                <span>Há 3 dias</span>
+                <span>987 interessados</span>
+              </div>
+            </div>
+          </article>
+          <article class="news-card" data-category="populares" role="listitem">
+            <img src="https://i.imgur.com/KjYr5xE.png" alt="Vitrine com mobis raros" loading="lazy">
+            <div class="card-content">
+              <span class="tag">Loja</span>
+              <h3>Mobis raros retornam por tempo limitado</h3>
+              <p>Garanta clássicos da coleção Neon Pulse antes que eles desapareçam novamente.</p>
+              <div class="meta">
+                <span>Há 4 dias</span>
+                <span>Loja oficial</span>
+              </div>
+            </div>
+          </article>
+          <article class="news-card" data-category="eventos" role="listitem">
+            <img src="https://i.imgur.com/YPj8Q0s.png" alt="Arena de batalhas do Habblet" loading="lazy">
+            <div class="card-content">
+              <span class="tag">Competitivo</span>
+              <h3>Torneio Batalha de Clãs</h3>
+              <p>Inscreva sua equipe para disputar recompensas exclusivas na temporada inaugural.</p>
+              <div class="meta">
+                <span>Em 2 dias</span>
+                <span>64 vagas</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="right-panel" aria-label="Atividades recentes">
+      <section class="widget" id="comunidade">
+        <header class="widget-header">
+          <h2>Comunidade</h2>
+          <a class="link" href="#comunidade">Ver mais</a>
+        </header>
+        <ul class="activity-list">
+          <li>
+            <span class="avatar-small" aria-hidden="true">JS</span>
+            <div>
+              <p><strong>JulioStreet</strong> publicou um quarto cyberpunk incrível!</p>
+              <span>Há 10 minutos</span>
+            </div>
+          </li>
+          <li>
+            <span class="avatar-small" aria-hidden="true">AL</span>
+            <div>
+              <p><strong>AlineLoka</strong> concluiu a missão Resgate Submarino.</p>
+              <span>Há 45 minutos</span>
+            </div>
+          </li>
+          <li>
+            <span class="avatar-small" aria-hidden="true">MK</span>
+            <div>
+              <p><strong>Monk</strong> está ao vivo construindo um parque aquático.</p>
+              <span>Há 1 hora</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="widget" id="ranking">
+        <header class="widget-header">
+          <h2>Ranking semanal</h2>
+          <a class="link" href="#ranking">Tabela completa</a>
+        </header>
+        <ol class="ranking">
+          <li>
+            <span class="position">1</span>
+            <div>
+              <p><strong>LadyPixel</strong></p>
+              <span>15.980 pontos</span>
+            </div>
+          </li>
+          <li>
+            <span class="position">2</span>
+            <div>
+              <p><strong>Smurf</strong></p>
+              <span>14.520 pontos</span>
+            </div>
+          </li>
+          <li>
+            <span class="position">3</span>
+            <div>
+              <p><strong>B4c0</strong></p>
+              <span>13.870 pontos</span>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <section class="widget">
+        <header class="widget-header">
+          <h2>Habblet Guide</h2>
+        </header>
+        <p>Descubra dicas exclusivas, entrevistas com staffs e histórias dos moradores que fazem a cidade pulsar.</p>
+        <button type="button" class="cta">Ver guias especiais</button>
+      </section>
+    </aside>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
