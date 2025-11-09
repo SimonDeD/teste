@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adow Social</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <img src="https://i.imgur.com/1Xc7VFr.png" alt="Avatar" class="avatar">
+        <div class="sidebar__user">
+          <span class="user__name">Walin</span>
+          <span class="user__role">Explorador</span>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <a href="#" class="nav__item active">
+          <span class="nav__icon">🏠</span>
+          <span class="nav__label">Início</span>
+        </a>
+        <a href="#" class="nav__item">
+          <span class="nav__icon">📰</span>
+          <span class="nav__label">Artigos</span>
+        </a>
+        <a href="#" class="nav__item">
+          <span class="nav__icon">👤</span>
+          <span class="nav__label">Meu perfil</span>
+        </a>
+        <a href="#" class="nav__item">
+          <span class="nav__icon">💬</span>
+          <span class="nav__label">Mensagens</span>
+        </a>
+        <a href="#" class="nav__item">
+          <span class="nav__icon">🏛️</span>
+          <span class="nav__label">Monumentos</span>
+        </a>
+        <a href="#" class="nav__item">
+          <span class="nav__icon">🛡️</span>
+          <span class="nav__label">Missões</span>
+        </a>
+        <a href="#" class="nav__item">
+          <span class="nav__icon">⚙️</span>
+          <span class="nav__label">Configurações</span>
+        </a>
+      </nav>
+      <button class="sidebar__logout">Desconectar</button>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div class="logo">
+          <img src="https://i.imgur.com/xjaMQ0R.png" alt="Adow logo">
+          <span>adow</span>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Buscar">
+        </div>
+        <div class="topbar__actions">
+          <button class="button button--primary">Promoção do dia</button>
+          <button class="icon-button" aria-label="Notificações">🔔</button>
+          <button class="icon-button" aria-label="Configurações">⚙️</button>
+          <button class="button button--success">Entrar em Adow</button>
+        </div>
+      </header>
+
+      <section class="stories">
+        <div class="section__header">
+          <h2>Story</h2>
+          <a href="#">Ver todos</a>
+        </div>
+        <div class="stories__list">
+          <div class="story">
+            <img src="https://i.imgur.com/XbW9X2Z.png" alt="Story 1">
+            <span>Clara</span>
+          </div>
+          <div class="story">
+            <img src="https://i.imgur.com/H8Zz4bY.png" alt="Story 2">
+            <span>Jhon</span>
+          </div>
+          <div class="story">
+            <img src="https://i.imgur.com/fD3h4Do.png" alt="Story 3">
+            <span>Mia</span>
+          </div>
+          <div class="story">
+            <img src="https://i.imgur.com/zPpYqIF.png" alt="Story 4">
+            <span>Ruri</span>
+          </div>
+          <div class="story">
+            <img src="https://i.imgur.com/5JlD0dB.png" alt="Story 5">
+            <span>Noah</span>
+          </div>
+          <div class="story">
+            <img src="https://i.imgur.com/Bp0uxM5.png" alt="Story 6">
+            <span>Zed</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="section__header">
+          <h2>Últimas novidades</h2>
+          <div class="tabs">
+            <button class="tab active">Recentes</button>
+            <button class="tab">Populares</button>
+          </div>
+        </div>
+
+        <div class="news__grid">
+          <article class="card">
+            <img src="https://i.imgur.com/C1al8ZT.png" alt="Novidade 1" class="card__cover">
+            <div class="card__content">
+              <div class="card__author">
+                <img src="https://i.imgur.com/yaXq1e0.png" alt="Autor 1">
+                <div>
+                  <span class="author__name">Habbin</span>
+                  <span class="author__time">há 15 min</span>
+                </div>
+              </div>
+              <p>Nova coleção de móveis acaba de chegar à loja principal!</p>
+              <div class="card__actions">
+                <button class="icon-button">❤️</button>
+                <button class="icon-button">💬</button>
+                <button class="icon-button">↗️</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://i.imgur.com/BULxYwF.png" alt="Novidade 2" class="card__cover">
+            <div class="card__content">
+              <div class="card__author">
+                <img src="https://i.imgur.com/yaXq1e0.png" alt="Autor 2">
+                <div>
+                  <span class="author__name">Amelie</span>
+                  <span class="author__time">há 45 min</span>
+                </div>
+              </div>
+              <p>Explore os novos ambientes criados pela comunidade!</p>
+              <div class="card__actions">
+                <button class="icon-button">❤️</button>
+                <button class="icon-button">💬</button>
+                <button class="icon-button">↗️</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://i.imgur.com/sV4z5Wz.png" alt="Novidade 3" class="card__cover">
+            <div class="card__content">
+              <div class="card__author">
+                <img src="https://i.imgur.com/yaXq1e0.png" alt="Autor 3">
+                <div>
+                  <span class="author__name">Carter</span>
+                  <span class="author__time">há 2 h</span>
+                </div>
+              </div>
+              <p>Participe do evento de verão e ganhe prêmios exclusivos.</p>
+              <div class="card__actions">
+                <button class="icon-button">❤️</button>
+                <button class="icon-button">💬</button>
+                <button class="icon-button">↗️</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
